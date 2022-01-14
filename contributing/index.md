@@ -1,6 +1,6 @@
 # Guide to Contributing
 
-If you have further questions, open an [GitHub Issue](https://github.com/puppy-blog/puppy-blog.github.io/issues).
+If you have further questions, open a [GitHub Issue](https://github.com/puppy-blog/puppy-blog.github.io/issues).
 
 ## Who can write for the blog?
 
@@ -59,7 +59,7 @@ You can see more in the [Jupyter Book documentation](https://jupyterbook.org/con
 
 ### Images
 
-Put images in the `/assets/images/2022` directory. In your post, you can refer to them in a Markdown link. For example, the following will display the Python logo.
+Put images in the `/assets/images/<year>` directory. In your post, you can refer to them in a Markdown link. For example, the following will display the Python logo.
 
 ```markdown
 ![python logo](../assets/images/2022/python-logo.svg)
