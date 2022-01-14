@@ -1,0 +1,20 @@
+format: jb-book
+root: index
+chapters:
+- file: about
+- file: blog
+  sections:
+  - file: posts/latest/index
+    title: Latest posts
+    sections:
+    - glob: posts/latest/*
+  - file: posts/2022/index
+    title: "2022"
+    sections:
+    - glob: posts/2022/*
+- file: contributing/index
+  title: Contributing
+- url: https://www.pspython.com/
+  title: PuPPy home
+- url: https://www.pspython.com/pages/code-of-conduct/
+  title: Code of Conduct
