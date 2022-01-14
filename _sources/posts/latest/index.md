@@ -1,0 +1,4 @@
+# Latest posts
+
+```{tableofcontents}
+```
