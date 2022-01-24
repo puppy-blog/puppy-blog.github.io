@@ -5,8 +5,14 @@ The PuPPy blog is a collaborative effort from members of the **Pu**get Sound **P
 ## Latest posts
 
 ````{panels}
-[**Welcome to the PuPPy blog**](posts/latest/2022-01-13-welcome)
+[**A PuPPy Slack Primer**](posts/latest/2022-01-23-puppy-slack-primer)<br>
+23 January 2022
 
 _Jacob Deppen_
+---
 
+[**Welcome to the PuPPy blog**](posts/latest/2022-01-13-welcome)<br>
+13 January 2022
+
+_Jacob Deppen_
 ````
