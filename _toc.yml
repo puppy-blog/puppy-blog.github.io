@@ -4,10 +4,6 @@ chapters:
 # - file: about
 - file: blog
   sections:
-  - file: posts/latest/index
-    title: Latest posts
-    sections:
-    - glob: posts/latest/*
   - file: posts/2022/index
     title: "2022"
     sections:

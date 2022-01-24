@@ -1,4 +1,0 @@
-# Latest posts
-
-```{tableofcontents}
-```
