@@ -44,7 +44,9 @@ Editors and maintainers should default to "yes" on proposed blog post ideas, pro
 
 ## Style and Format
 
-The blog’s template sets many of the default stylistic aspects of the blog. Beyond that, you are welcome to write your content in whatever way you choose.
+The blog’s theme sets many of the default stylistic aspects of the blog. Beyond that, you are welcome to write your content in whatever way you choose.
+
+There is a basic template for a Markdown post in `/drafts/template.md`.
 
 The blog is built with the [Jupyter Book](https://jupyterbook.org/) framework. Jupyter Book offers many nice features built-in:
 
@@ -66,6 +68,23 @@ Put images in the `/assets/images/<year>` directory. In your post, you can refer
 ```
 
 ![python logo](../assets/images/2022/python-logo.svg)
+
+### Comments
+
+You can choose to enable or disable comments on your post by adding (or not) the following snippet at the end of your post.
+
+````md
+```{raw} html
+<script src="https://utteranc.es/client.js"
+        repo="puppy-blog/puppy-blog.github.io"
+        issue-term="pathname"
+        label="blog-comment💬"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+```
+````
 
 ## Editors’ checklist
 

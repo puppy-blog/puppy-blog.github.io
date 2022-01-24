@@ -40,6 +40,40 @@
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "puppy-blog/puppy-blog.github.io");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -282,6 +316,11 @@
      Images
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comments">
+     Comments
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -337,6 +376,11 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#images">
      Images
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comments">
+     Comments
     </a>
    </li>
   </ul>
@@ -401,7 +445,8 @@
 </div>
 <div class="section" id="style-and-format">
 <h2>Style and Format<a class="headerlink" href="#style-and-format" title="Permalink to this headline">¶</a></h2>
-<p>The blog’s template sets many of the default stylistic aspects of the blog. Beyond that, you are welcome to write your content in whatever way you choose.</p>
+<p>The blog’s theme sets many of the default stylistic aspects of the blog. Beyond that, you are welcome to write your content in whatever way you choose.</p>
+<p>There is a basic template for a Markdown post in <code class="docutils literal notranslate"><span class="pre">/drafts/template.md</span></code>.</p>
 <p>The blog is built with the <a class="reference external" href="https://jupyterbook.org/">Jupyter Book</a> framework. Jupyter Book offers many nice features built-in:</p>
 <ul class="simple">
 <li><p>Content can be written in <a class="reference external" href="https://jupyterbook.org/file-types/index.html">Markdown, reStructuredText, or Jupyter Notebooks</a></p></li>
@@ -419,6 +464,22 @@
 </pre></div>
 </div>
 <p><img alt="python logo" src="../_images/python-logo.svg" /></p>
+</div>
+<div class="section" id="comments">
+<h3>Comments<a class="headerlink" href="#comments" title="Permalink to this headline">¶</a></h3>
+<p>You can choose to enable or disable comments on your post by adding (or not) the following snippet at the end of your post.</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>```{raw} html
+&lt;script src=&quot;https://utteranc.es/client.js&quot;
+        repo=&quot;puppy-blog/puppy-blog.github.io&quot;
+        issue-term=&quot;pathname&quot;
+        label=&quot;blog-comment💬&quot;
+        theme=&quot;github-light&quot;
+        crossorigin=&quot;anonymous&quot;
+        async&gt;
+&lt;/script&gt;
+```
+</pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="editors-checklist">
