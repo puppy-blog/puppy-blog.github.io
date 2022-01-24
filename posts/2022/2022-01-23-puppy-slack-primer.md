@@ -2,7 +2,7 @@
 
 _Jacob Deppen_
 
- Since 2015, the [PuPPy Slack](http://slack.pspython.com/) has been the online gathering place to keep the community connected between in-person meetings. Since the spring of 2020, when in-person Meetups were halted, the PuPPy Slack workspace has become the main forum for staying engaged with the rest of the community. The Slack workspace has more than 3,200 members and over 150 channels (as of January 2022), so when new people join, it can be a bit overwhelming and difficult to find the channels that fit their particular interests. This post is a quick summary of some of the more popular channels as well as some fun niche channels.
+Since 2015, the [PuPPy Slack](http://slack.pspython.com/) has been the online gathering place to keep the community connected between in-person meetings. Since the spring of 2020, when in-person Meetups were halted, the PuPPy Slack workspace has become the main forum for staying engaged with the rest of the community. The Slack workspace has more than 3,200 members and over 150 channels (as of January 2022), so when new people join, it can be a bit overwhelming and difficult to find the channels that fit their particular interests. This post is a quick summary of some of the more popular channels as well as some fun niche channels.
 
 ```{admonition} Caveat
 :class: attention
