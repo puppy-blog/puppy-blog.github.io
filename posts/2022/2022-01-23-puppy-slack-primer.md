@@ -104,3 +104,15 @@ These are popular channels that I am not a member of but sound great.
 
 `#golang` and `#rustaceans`
 : For the polyglots.
+
+% This HTML activates utterances (the comments engine) only on this page
+```{raw} html
+<script src="https://utteranc.es/client.js"
+        repo="puppy-blog/puppy-blog.github.io"
+        issue-term="pathname"
+        label="blog-comment💬"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
+```
