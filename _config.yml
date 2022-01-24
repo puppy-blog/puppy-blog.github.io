@@ -59,7 +59,9 @@ html:
   baseurl                   : "https://puppy-blog.github.io"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
     hypothesis              : false
-    utterances              : false
+    utterances:
+      repo: "puppy-blog/puppy-blog.github.io"
+
 
 #######################################################################################
 # LaTeX-specific settings
